@@ -8,7 +8,7 @@ RUN sudo apt update && sudo apt upgrade -y \
       && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - \
       && sudo apt install -y nodejs \
       # java
-      && sudo apt install -y openjdk-13-jdk \
+      && sudo apt install -y openjdk-11-jdk \
       # Golang
       && sudo apt install -y golang-go \
       # Rust

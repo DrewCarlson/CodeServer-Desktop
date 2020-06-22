@@ -11,7 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 RUN sudo apt install -y nodejs
 
 # java
-RUN sudo apt install -y openjdk-8-jdk
+RUN sudo apt install -y openjdk-13-jdk-headless
 
 # Golang
 RUN sudo apt install -y golang-go

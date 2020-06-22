@@ -23,7 +23,7 @@ Unsigned release binaries are published to the [Releases](https://github.com/Dre
 At first launch you will be prompted for a server URL which will be loaded automatically in the future.
 
 (Optional) This project is for personal use so you will find the base [Dockerfile](Dockerfile) used for my code-server.
-It includes Java 8, Nodejs 12, Rust, Golang, Sdkman, and [Krypton](https://krypt.co/).
+It includes Java 13, Nodejs 12, Rust, Golang, Sdkman, and [Krypton](https://krypt.co/).
 oh-my-zsh is installed, just set `terminal.integrated.shell.linux` to `/etc/zsh` in code-server.
 
 
@@ -50,7 +50,7 @@ yarn dist
 ## Publishing
 
 Pushing a tag prefixed with `v` (ex. `v1.0.0`) will trigger a release upload to Github for every platform.
-See [.github/workflows/electron-build.yml](.github/workflows/electron-build.yml).
+See [electron-build.yml](.github/workflows/electron-build.yml).
 
 
 ## License

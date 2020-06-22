@@ -1,5 +1,6 @@
 FROM codercom/code-server:latest
 
+RUN sudo add-apt-repository ppa:openjdk-r/ppa
 RUN sudo apt update && sudo apt upgrade -y
 
 # Zsh

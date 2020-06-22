@@ -1,0 +1,27 @@
+{
+    "name": "CodeServer",
+    "main": "src/main.js",
+    "version": "0.1.0",
+    "author": "Drew Carlson",
+    "description": "Desktop code-server frontend.",
+    "homepage": "https://github.com/DrewCarlson/CodeServer-Desktop",
+    "scripts": {
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder",
+        "postinstall": "electron-builder install-app-deps",
+        "rebuild-deps": "electron-builder install-app-deps",
+        "start": "electron .",
+        "debug": "electron . --inspect-brk"
+    },
+    "devDependencies": {
+        "electron": "^9.0.4",
+        "electron-builder": "^22.7.0"
+    },
+    "dependencies": {
+        "electron-prompt": "https://github.com/p-sam/electron-prompt.git#3651e33",
+        "electron-store": "^5.2.0",
+        "electron-unhandled": "^3.0.2",
+        "electron-updater": "^4.3.1",
+        "electron-window-state": "^5.0.3"
+    }
+}

@@ -1,7 +1,7 @@
 # CodeServer-Desktop
 
 ![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/DrewCarlson/CodeServer-Desktop?include_prereleases&sort=semver)
-![Build/release](https://github.com/DrewCarlson/CodeServer-Desktop/workflows/Build/release/badge.svg)
+![release](https://github.com/DrewCarlson/CodeServer-Desktop/workflows/release/badge.svg)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/drewcarlson/codeserver)
 
 Electron frontend for [code-server](https://github.com/cdr/code-server).

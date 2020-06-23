@@ -20,8 +20,13 @@ function startMainWindow() {
         // main window already exists
         return
     }
-    let serverUrl = store.get(KEY_SERVER_URL)
-    if (serverUrl === null) {
+
+    if (store.has(KEY_SERVER_URL)) {
+        mainWindow = createMainWindow(store.get(KEY_SERVER_URL))
+        mainWindow.on('closed', () => {
+            mainWindow = null
+        })
+    } else {
         prompt({
             title: 'Configure Server',
             label: 'Server URL:',
@@ -36,11 +41,6 @@ function startMainWindow() {
                 store.set(KEY_SERVER_URL, url)
                 startMainWindow()
             }
-        })
-    } else {
-        mainWindow = createMainWindow(serverUrl)
-        mainWindow.on('closed', () => {
-            mainWindow = null
         })
     }
 }

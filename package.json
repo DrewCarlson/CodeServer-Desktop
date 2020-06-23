@@ -1,7 +1,7 @@
 {
     "name": "CodeServer",
     "main": "src/main.js",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "Drew Carlson",
     "description": "Desktop code-server frontend.",
     "homepage": "https://github.com/DrewCarlson/CodeServer-Desktop",
